@@ -1,0 +1,75 @@
+html, body, .container, .content, section {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content > nav {
+    position: fixed;
+    z-index: 9999;
+    right: 100px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);    
+}
+
+.content > nav a {
+    display: block;
+    position: relative;
+    height: 50px;
+}
+
+.content > nav a:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+.content > nav a:hover:after {
+    background: rgba(255,255,244,0.6);
+}
+
+.content > nav a.current:after {
+    background: #000;
+}
+
+.content section {
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#intro {
+    background-image: url("../image/vsco_012115.jpg");
+}
+
+#article {
+    background-color: #fff;
+}
+
+#article h1, p {
+    text-align: center;
+}
+
+#article h1 {
+    font-size: 2.0em;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2.0px;
+}
+
+#article p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.0em;
+    letter-spacing: 1.0px;
+}
+
+#more {
+    background-image: url("../image/vsco_012716.jpg");
+}
